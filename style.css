@@ -1,0 +1,365 @@
+/* === General Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fbe9f0;
+    color: #4527a0;
+    display: flex;
+  }
+  
+ /* === Hamburger button === */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #c2185b;
+  cursor: pointer;
+  margin: 10px;
+  align-self: flex-start;
+}
+
+/* === Responsive Sidebar === */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-bottom: 2px solid #f8bbd0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .sidebar-content.show {
+    display: flex;
+  }
+
+  .sidebar-content a {
+    padding: 8px 0;
+    font-size: 1rem;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .main {
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+  /* === Main Content Area === */
+  .main {
+    margin-left: 220px;
+    padding: 2rem 1.2rem;
+    width: calc(100% - 220px);
+  }
+  
+  /* === Universal Section Style === */
+  section {
+    margin-bottom: 60px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #4a148c;
+    margin-bottom: 20px;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7b1fa2;
+    margin: 20px 0 10px;
+  }
+  
+  /* === Bubble Card Container (Reusable) === */
+  .bubble-box {
+    background-color: #fff0f6;
+    padding: 30px 25px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.15);
+    line-height: 1.7;
+  }
+  
+  .bubble-box h2 {
+    font-size: 2.2rem;
+    color: #4a148c;
+    margin-bottom: 20px;
+  }
+  
+  .bubble-box h3 {
+    font-size: 1.2rem;
+    color: #7b1fa2;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .bubble-box p,
+  .bubble-box li {
+    font-size: 1rem;
+    color: #4527a0;
+    margin-bottom: 12px;
+  }
+  
+  .bubble-box ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .bubble-box strong {
+    color: #6a1b9a;
+    font-weight: 600;
+  }
+  
+  /* === Experience & Project Cards === */
+  .experience-card {
+    background-color: #fde4ec;
+    border-left: 5px solid #f06292;
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(240, 98, 146, 0.15);
+    transition: transform 0.2s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .job-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ad1457;
+    margin-bottom: 6px;
+  }
+  
+  .job-dates {
+    font-style: italic;
+    color: #7b1fa2;
+    margin-bottom: 12px;
+  }
+  
+  .experience-card ul {
+    padding-left: 20px;
+  }
+  
+  .experience-card li {
+    color: #4527a0;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  /* === Intro Section (Hero/Home) === */
+  .intro h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #4a148c;
+  }
+  
+  .highlight-name {
+    background: linear-gradient(135deg, #ec407a, #ab47bc);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(172, 53, 124, 0.2);
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #512da8;
+    margin-bottom: 1rem;
+  }
+  
+  .socials img {
+    width: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  /* === Buttons === */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #ab47bc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .btn.outline {
+    background-color: transparent;
+    border: 2px solid #ab47bc;
+    color: #ab47bc;
+  }
+  a {
+    color: #ab47bc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .star {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    animation: subtleTwinkle 1s ease-out forwards;
+    opacity: 0.7;
+  }
+  
+  .star svg {
+    width: 12px;
+    height: 12px;
+    transform: scale(1);
+    transition: transform 1s, opacity 1s;
+  }
+  
+  @keyframes subtleTwinkle {
+    0% {
+      opacity: 0.7;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.8);
+    }
+  }
+  .contact-icons {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .contact-icons li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+    /* Sidebar default styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: white; /* keep background white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Profile picture styling */
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* make it a circle */
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 3px solid #f8bbd0;
+  }
+  
+  /* Sidebar link styles */
+  .sidebar nav a,
+  .sidebar-content a {
+    text-decoration: none;
+    font-weight: 700; /* make font bolder */
+    color: #c2185b;
+    padding: 8px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .sidebar nav a:hover,
+  .sidebar-content a:hover {
+    background-color: #f8bbd0;
+    border-radius: 5px;
+  }
+  
+  /* Responsive hamburger adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 10px 15px;
+      border-bottom: 2px solid #f8bbd0;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: #c2185b;
+      cursor: pointer;
+      margin: 10px;
+      align-self: flex-start;
+    }
+  
+    .sidebar-content {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .sidebar-content.show {
+      display: flex;
+    }
+  
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  
