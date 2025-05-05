@@ -6,35 +6,33 @@
   <title>Dieunie Gousse | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="icon" href="assets/img/profile.jpg" type="image/jpg">
+  
   <!-- Standard favicon -->
 <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
 <!-- PNG fallback -->
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 
-<!-- Optional: Apple devices -->
+<!-- Apple devices -->
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
 </head>
 <body>
-    <div class="sidebar">
-        <button id="menu-toggle" class="hamburger">&#9776;</button>
-      
-        <div class="sidebar-content" id="sidebar-menu">
-          <a href="#home">
-            <img src="assets/img/IMG_1524.jpg" alt="Profile Picture" class="profile-pic" />
-          </a>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-          <a href="assets/resume/Dieunie_Gousse_Resume.pdf" target="_blank">Resume</a>
-        </div>
-      </div>
-      
-
+  <div class="sidebar">
+    <nav>
+      <a href="#home">
+        <img src="assets/img/IMG_1524.jpg" alt="Profile Picture" class="profile-pic" />
+      </a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/resume/Dieunie_Gousse_Resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </div>
+  
   <div class="main">
     <!-- === Intro Section === -->
     <section id="home" class="intro bubble-box">
@@ -121,47 +119,54 @@
   
 <!-- === Projects Section === -->
 <section id="projects" class="bubble-box">
-    <h2>Projects</h2>
-  
-    <div class="experience-card">
-      <h3 class="job-title">Card Game – 24 (Java, JavaFX)</h3>
-      <p class="job-dates">March 2025</p>
-      <p>
-        Developed an interactive JavaFX desktop application that challenges players to create mathematical expressions equaling 24 using four randomly drawn cards. 
-        Implemented a hint system using recursive evaluation, input validation, and clean UI design. Gained hands-on experience with layout management and Java object modeling.
-      </p>
-    </div>
-  
-    <div class="experience-card">
-      <h3 class="job-title">Event Website (HTML, CSS, JavaScript)</h3>
-      <p class="job-dates">Feb 2025 – CodePath Web101</p>
-      <p>
-        Created a fully responsive multi-page event website featuring a homepage, RSVP form, and contact section. 
-        Used Flexbox and Grid to structure content and implemented dark/light mode switching with JavaScript. 
-        Styled all components for a polished UI and practiced Git-based version control using GitHub Pages for deployment.
-      </p>
-    </div>
-  
-    <div class="experience-card">
-      <h3 class="job-title">McDonald’s Franchise System (Java, SQL)</h3>
-      <p class="job-dates">Fall 2024 – Java Programming Course</p>
-      <p>
-        Simulated a full backend system for managing restaurant operations including menu creation, order processing, and billing.
-        Applied object-oriented programming principles and connected the application to SQL Server to enable persistent data handling. 
-        Developed modular classes and implemented file I/O for menu updates and transaction logs.
-      </p>
-    </div>
-  
-    <div class="experience-card">
-      <h3 class="job-title">Maze Solver App (Java, Recursion)</h3>
-      <p class="job-dates">Sep 2024</p>
-      <p>
-        Engineered a recursive backtracking algorithm to solve 2D mazes visually. 
-        The app highlights valid paths and tracks memory usage through recursion depth. 
-        Designed the maze grid system using arrays and implemented logic to detect dead-ends and visualize solution paths step-by-step.
-      </p>
-    </div>
-  </section>
+  <h2>Projects</h2>
+
+  <div class="experience-card">
+    <h3 class="job-title">Card Game – 24 (Java, JavaFX)</h3>
+    <p class="job-dates">March 2025</p>
+    <p>
+      Developed an interactive JavaFX desktop application that challenges players to create mathematical expressions equaling 24 using four randomly drawn cards. 
+      Implemented a hint system using recursive evaluation, input validation, and clean UI design. Gained hands-on experience with layout management and Java object modeling.
+    </p>
+    <ul class="project-links">
+      <li><a href="https://youtu.be/OZOZoZWQ_jc?si=kun0qF7CVW6CjNbr" target="_blank">📺 Watch Demo</a></li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3 class="job-title">Event Website (HTML, CSS, JavaScript)</h3>
+    <p class="job-dates">Feb 2025 – CodePath Web101</p>
+    <p>
+      Created a fully responsive multi-page event website featuring a homepage, RSVP form, and contact section. 
+      Used Flexbox and Grid to structure content and implemented dark/light mode switching with JavaScript. 
+      Styled all components for a polished UI and practiced Git-based version control using GitHub Pages for deployment.
+    </p>
+    <ul class="project-links">
+      <li><a href="https://drawing-flexible-stream-277.vscodeedu.app/" target="_blank">🌐 View Live Site</a></li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3 class="job-title">McDonald’s Franchise System (Java, SQL)</h3>
+    <p class="job-dates">Fall 2024 – Java Programming Course</p>
+    <p>
+      Simulated a full backend system for managing restaurant operations including menu creation, order processing, and billing.
+      Applied object-oriented programming principles and connected the application to SQL Server to enable persistent data handling. 
+      Developed modular classes and implemented file I/O for menu updates and transaction logs.
+    </p>
+  </div>
+
+  <div class="experience-card">
+    <h3 class="job-title">Maze Solver App (Java, Recursion)</h3>
+    <p class="job-dates">Sep 2024</p>
+    <p>
+      Engineered a recursive backtracking algorithm to solve 2D mazes visually. 
+      The app highlights valid paths and tracks memory usage through recursion depth. 
+      Designed the maze grid system using arrays and implemented logic to detect dead-ends and visualize solution paths step-by-step.
+    </p>
+  </div>
+</section>
+
   
   
 <!-- === Skills Section === -->
@@ -224,6 +229,16 @@
         This degree supported my transition into the technical field and built my commitment to lifelong learning.
       </p>
     </div>
+    <div class="experience-card">
+      <h3 class="job-title">CodePath Web Development Program</h3>
+      <p class="job-dates">Spring 2025 – Online Academy</p>
+      <p>
+        Completed an intensive, hands-on web development course focused on HTML, CSS, and JavaScript fundamentals. 
+        Designed and deployed a multi-page event website with responsive layouts, form validation, dark mode toggle, and version control using GitHub.
+        This program emphasized practical coding, collaboration, and professional development through weekly coding labs and real-world projects.
+      </p>
+    </div>
+    
   </section>
   
   
@@ -254,6 +269,11 @@
             <img src="assets/icons/github.svg" alt="GitHub Icon" class="contact-icon" />
             <a href="https://github.com/DieunieG" target="_blank">github.com/DieunieG</a>
           </li>
+          <li>
+            <img src="assets/icons/icons8-hackerrank-24.png" alt="HackerRank Icon" class="contact-icon" />
+            <a href="https://www.hackerrank.com/dashboard" target="_blank">hackerrank.com/dashboard</a>
+          </li>
+          
         </ul>
       </div>
       
