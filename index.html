@@ -10,292 +10,335 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 </head>
 <body>
-  <div class="sidebar">
-    <nav>
-      <a href="#home" aria-label="Back to top">
-        <img src="assets/img/IMG_1524.jpg" alt="Profile Picture of Dieunie Gousse" class="profile-pic" />
-      </a>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">DG</span>
+      <span class="brand-text">
+        <strong>Dieunie Gousse</strong>
+        <span>Portfolio</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
-      <a href="assets/resume/Dieunie_Gousse_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a class="nav-resume" href="assets/resume/Dieunie_Gousse_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
     </nav>
-  </div>
+  </header>
 
-  <div class="main">
-    <section id="home" class="intro bubble-box">
-      <h1 class="name-line">
-        Hi, I'm <span class="highlight-name">Dieunie Gousse</span>.
-      </h1>
-      <h3 class="subheading"><span class="typing">A Fast Learner</span></h3>
-      <p>
-        Self-driven, passionate developer and
-        <br />
-        curious about solving real-world problems using technology and creativity.
-      </p>
+  <main class="page-shell">
+    <section id="home" class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Software engineer in progress with a focus on frontend and full-stack development</p>
+        <h1>
+          Building thoughtful digital experiences with strong design instincts and real technical range.
+        </h1>
+        <p class="hero-lead">
+          I&rsquo;m Dieunie Gousse, a Computer Science student who enjoys turning ideas into responsive, polished products across web, Java, and database-driven projects.
+        </p>
 
-      <div class="buttons">
-        <a class="btn" href="#projects">Read More</a>
-        <a class="btn outline" href="#contact">Contact Me</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Featured Work</a>
+          <a class="btn btn-secondary" href="assets/resume/Dieunie_Gousse_Resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume</a>
+        </div>
+
+        <div class="quick-facts">
+          <article class="fact-card reveal">
+            <span class="fact-number">6+</span>
+            <span class="fact-label">responsive UI screens shipped in a team product build</span>
+          </article>
+          <article class="fact-card reveal">
+            <span class="fact-number">100+</span>
+            <span class="fact-label">client profiles managed with reliability and attention to detail</span>
+          </article>
+          <article class="fact-card reveal">
+            <span class="fact-number">3</span>
+            <span class="fact-label">core strengths: frontend polish, teamwork, fast learning</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-panel reveal">
+        <div class="portrait-wrap">
+          <img src="assets/img/IMG_1524.jpg" alt="Portrait of Dieunie Gousse" class="hero-portrait" />
+        </div>
+
+        <div class="spotlight-card">
+          <p class="spotlight-label">Quick Snapshot</p>
+          <ul>
+            <li>Computer Science student at Farmingdale State College</li>
+            <li>Dean&rsquo;s List scholar graduating in May 2026</li>
+            <li>Hands-on with React, Java, SQL, Git, and responsive UI work</li>
+            <li>Focused on internships and early-career software engineering roles</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-panel highlight-strip reveal">
+      <div>
+        <p class="section-kicker">40-second overview</p>
+        <h2>What stands out at first glance</h2>
+      </div>
+      <div class="highlight-grid">
+        <article class="mini-panel">
+          <h3>What I bring</h3>
+          <p>Clean frontend execution, strong follow-through, and the ability to learn new tools quickly.</p>
+        </article>
+        <article class="mini-panel">
+          <h3>How I work</h3>
+          <p>I care about user experience, collaboration, and making code readable and maintainable.</p>
+        </article>
+        <article class="mini-panel">
+          <h3>What to explore</h3>
+          <p>Start with FinTrack and my JavaFX projects to see both collaborative product work and hands-on technical problem solving.</p>
+        </article>
       </div>
     </section>
 
-    <section id="about" class="bubble-box">
-      <h2>About Me</h2>
-      <h3>Who I Am</h3>
-      <p>
-        I&rsquo;m <strong>Dieunie Gousse</strong>, a passionate Computer Science student at Farmingdale State College and a proud Dean&rsquo;s List scholar.
-        I enjoy building things with clean code and great design &mdash; especially when they help others.
-      </p>
-      <h3>Academic + Technical Experience</h3>
-      <p>
-        I&rsquo;ve created JavaFX applications, coded responsive event sites, and helped build a front-end dashboard in a real team environment.
-        These experiences taught me React, Git, and modern Java development. I've also worked with databases like SQL Server and MongoDB
-        to design schemas, write queries, and connect backend logic for persistent data storage.
-      </p>
-      <h3>Professional Summary</h3>
-      <p>
-        I bring a hands-on approach to software development, using tools like Figma, IntelliJ, GitHub, and Docker to build responsive and creative applications.
-        From debugging JavaFX logic to crafting modern interfaces with React and CSS, I focus on writing clean, maintainable code that aligns with user needs.
-        I&rsquo;ve collaborated with teams to integrate APIs, design scalable UI components, and manage code through version control.
-        Whether I&rsquo;m prototyping solo or syncing with teammates, I value attention to detail, creative problem solving, and continuous growth in every project.
-      </p>
-      <h3>Tech Stack</h3>
-      <p><strong>Languages:</strong> Java, Python, JavaScript, C/C++, SQL, HTML/CSS</p>
-      <p><strong>Databases:</strong> SQL Server, MongoDB</p>
-      <p><strong>Frameworks:</strong> JavaFX, SpringBoot, React, Node.js</p>
-      <p><strong>Tools:</strong> Git, Docker, IntelliJ, VS Code, Adobe Suite, GCP, AWS</p>
-      <h3>Mission</h3>
-      <p>
-        I'm passionate about building ethical software that improves lives. I strive for creativity, collaboration, and growth in every project I take on.
-      </p>
-    </section>
-
-    <section id="experience" class="bubble-box">
-      <h2>Experience</h2>
-
-      <div class="experience-card">
-        <h3 class="job-title">Frontend Developer &ndash; FinTrack</h3>
-        <p class="job-dates">Jan 2025 &ndash; Mar 2025 | Collaborative Group</p>
-        <ul>
-          <li>Built 6+ responsive UI screens using React, Figma, and Flexbox.</li>
-          <li>Collaborated on dark mode toggle and GitHub feature branching.</li>
-          <li>Integrated APIs and styled complex components with clean UX in mind.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <h3 class="job-title">Beautician &ndash; Deja Vu Salon</h3>
-        <p class="job-dates">Mar 2020 &ndash; Present | Northport, NY</p>
-        <ul>
-          <li>Managed over 100+ client profiles using appointment scheduling software.</li>
-          <li>Boosted customer retention and monthly bookings with trend-based planning.</li>
-          <li>Created personalized service packages informed by data and feedback.</li>
-        </ul>
+    <section id="about" class="section-panel reveal">
+      <p class="section-kicker">About</p>
+      <h2>Technical curiosity with a strong eye for people-focused design</h2>
+      <div class="content-grid two-column">
+        <div class="info-card">
+          <h3>Who I am</h3>
+          <p>
+            I&rsquo;m a Computer Science student who enjoys building digital experiences that feel thoughtful, clear, and useful.
+            I like projects where design and logic meet, especially when I can improve how people interact with software.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>What makes me stand out</h3>
+          <p>
+            I bring a mix of technical range and people skills: frontend development, Java-based problem solving, database work,
+            collaboration, and a service mindset sharpened through real client-facing experience.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="bubble-box">
-      <h2>Projects</h2>
+    <section id="experience" class="section-panel reveal">
+      <p class="section-kicker">Experience</p>
+      <h2>Evidence that I can contribute in real environments</h2>
+      <div class="timeline">
+        <article class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <h3>Frontend Developer</h3>
+              <p class="timeline-company">FinTrack</p>
+            </div>
+            <p class="timeline-date">Jan 2025 - Mar 2025</p>
+          </div>
+          <ul>
+            <li>Built 6+ responsive product screens using React, Figma, and Flexbox in a collaborative environment.</li>
+            <li>Worked through feature branching and shared UI decisions with teammates using GitHub.</li>
+            <li>Improved clarity and usability by styling complex components with a clean, modern user experience in mind.</li>
+          </ul>
+        </article>
 
-      <div class="experience-card">
-        <h3 class="job-title">Card Game &ndash; 24 (Java, JavaFX)</h3>
-        <p class="job-dates">March 2025</p>
-        <p>
-          Developed an interactive JavaFX desktop application that challenges players to create mathematical expressions equaling 24 using four randomly drawn cards.
-          Implemented a hint system using recursive evaluation, input validation, and clean UI design. Gained hands-on experience with layout management and Java object modeling.
-        </p>
-        <ul class="project-links">
-          <li><a href="https://youtu.be/OZOZoZWQ_jc?si=kun0qF7CVW6CjNbr" target="_blank" rel="noopener noreferrer">Watch Demo</a></li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <h3 class="job-title">Event Website (HTML, CSS, JavaScript)</h3>
-        <p class="job-dates">Feb 2025 &ndash; CodePath Web101</p>
-        <p>
-          Created a fully responsive multi-page event website featuring a homepage, RSVP form, and contact section.
-          Used Flexbox and Grid to structure content and implemented dark/light mode switching with JavaScript.
-          Styled all components for a polished UI and practiced Git-based version control using GitHub Pages for deployment.
-        </p>
-        <ul class="project-links">
-          <li><a href="https://drawing-flexible-stream-277.vscodeedu.app/" target="_blank" rel="noopener noreferrer">View Live Site</a></li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <h3 class="job-title">McDonald&rsquo;s Franchise System (Java, SQL)</h3>
-        <p class="job-dates">Fall 2024 &ndash; Java Programming Course</p>
-        <p>
-          Simulated a full backend system for managing restaurant operations including menu creation, order processing, and billing.
-          Applied object-oriented programming principles and connected the application to SQL Server to enable persistent data handling.
-          Developed modular classes and implemented file I/O for menu updates and transaction logs.
-        </p>
-      </div>
-
-      <div class="experience-card">
-        <h3 class="job-title">Maze Solver App (Java, Recursion)</h3>
-        <p class="job-dates">Sep 2024</p>
-        <p>
-          Engineered a recursive backtracking algorithm to solve 2D mazes visually.
-          The app highlights valid paths and tracks memory usage through recursion depth.
-          Designed the maze grid system using arrays and implemented logic to detect dead-ends and visualize solution paths step-by-step.
-        </p>
+        <article class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <h3>Beautician</h3>
+              <p class="timeline-company">Deja Vu Salon</p>
+            </div>
+            <p class="timeline-date">Mar 2020 - Present</p>
+          </div>
+          <ul>
+            <li>Managed 100+ client profiles and appointments with consistency, care, and attention to detail.</li>
+            <li>Improved repeat business by tailoring services based on patterns, preferences, and customer feedback.</li>
+            <li>Brought organization, communication, and trust-building skills that translate directly into team and user-facing roles.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="skills" class="bubble-box">
-      <h2>Skills</h2>
-
-      <div class="experience-card">
-        <h3 class="job-title">Languages</h3>
-        <p>Java, Python, JavaScript, C/C++, F#, SQL, HTML/CSS</p>
+    <section id="projects" class="section-panel reveal">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Projects</p>
+          <h2>Featured work worth a closer look</h2>
+        </div>
+        <p class="section-note">Chosen to show problem solving, code structure, and UI thinking.</p>
       </div>
 
-      <div class="experience-card">
-        <h3 class="job-title">Frameworks &amp; Libraries</h3>
-        <p>JavaFX, React, SpringBoot, Node.js, SceneBuilder, LucidChart</p>
-      </div>
+      <div class="project-grid">
+        <article class="project-card project-card-featured reveal">
+          <p class="project-tag">Featured Team Project</p>
+          <h3>FinTrack Dashboard</h3>
+          <p>
+            Built responsive UI screens in a team setting, contributed to shared design decisions, and helped shape a cleaner user experience for a finance product.
+          </p>
+          <ul class="project-meta">
+            <li>React</li>
+            <li>Figma</li>
+            <li>Responsive UI</li>
+            <li>Team Collaboration</li>
+          </ul>
+        </article>
 
-      <div class="experience-card">
-        <h3 class="job-title">Databases</h3>
-        <p>SQL Server, MongoDB</p>
-      </div>
+        <article class="project-card reveal">
+          <p class="project-tag">Java + JavaFX</p>
+          <h3>Card Game 24</h3>
+          <p>
+            Created an interactive JavaFX app that challenges users to form equations totaling 24 with randomly drawn cards, including hints and validation logic.
+          </p>
+          <div class="project-links">
+            <a href="https://youtu.be/OZOZoZWQ_jc?si=kun0qF7CVW6CjNbr" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+          </div>
+        </article>
 
-      <div class="experience-card">
-        <h3 class="job-title">Tools &amp; Platforms</h3>
-        <p>Git, GitHub, Docker, Microsoft 365, Google Cloud, AWS, VS Code, IntelliJ, Eclipse, Figma, Adobe Suite</p>
-      </div>
+        <article class="project-card reveal">
+          <p class="project-tag">Web Development</p>
+          <h3>Event Website</h3>
+          <p>
+            Designed and deployed a responsive event site with strong layout structure, polished styling, and hands-on GitHub Pages deployment experience.
+          </p>
+          <div class="project-links">
+            <a href="https://drawing-flexible-stream-277.vscodeedu.app/" target="_blank" rel="noopener noreferrer">View Live Site</a>
+          </div>
+        </article>
 
-      <div class="experience-card">
-        <h3 class="job-title">Soft Skills</h3>
-        <p>Collaboration, Creativity, Time Management, Problem Solving, Continuous Learning, Communication</p>
-      </div>
-    </section>
+        <article class="project-card reveal">
+          <p class="project-tag">Java + SQL</p>
+          <h3>McDonald&rsquo;s Franchise System</h3>
+          <p>
+            Simulated restaurant operations with modular Java classes, database connectivity, and persistent data handling for orders, billing, and menu logic.
+          </p>
+        </article>
 
-    <section id="education" class="bubble-box">
-      <h2>Education</h2>
-
-      <div class="experience-card">
-        <h3 class="job-title">Farmingdale State College</h3>
-        <p class="job-dates">Bachelor of Science in Computer Science &ndash; Expected May 2026</p>
-        <p>
-          Dean&rsquo;s List student actively pursuing a comprehensive curriculum in software engineering, system design, and web development.
-          Courses completed include:
-        </p>
-        <ul>
-          <li>Data Structures and Algorithms</li>
-          <li>Object-Oriented Programming (Java)</li>
-          <li>Web Development and JavaScript</li>
-          <li>Networking in Computing</li>
-          <li>Computer Organization and Architecture</li>
-          <li>Software Engineering and Operating Systems</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <h3 class="job-title">Suffolk County Community College</h3>
-        <p class="job-dates">Associate of Arts: Liberal Arts and General Studies</p>
-        <p>
-          Completed a well-rounded academic foundation focused on critical thinking, communication, and introductory computing.
-          This degree supported my transition into the technical field and built my commitment to lifelong learning.
-        </p>
-      </div>
-
-      <div class="experience-card">
-        <h3 class="job-title">CodePath Web Development Program</h3>
-        <p class="job-dates">Spring 2025 &ndash; Online Academy</p>
-        <p>
-          Completed an intensive, hands-on web development course focused on HTML, CSS, and JavaScript fundamentals.
-          Designed and deployed a multi-page event website with responsive layouts, form validation, dark mode toggle, and version control using GitHub.
-          This program emphasized practical coding, collaboration, and professional development through weekly coding labs and real-world projects.
-        </p>
+        <article class="project-card reveal">
+          <p class="project-tag">Algorithms</p>
+          <h3>Maze Solver App</h3>
+          <p>
+            Engineered a recursive backtracking solution for 2D mazes and visualized valid paths, dead ends, and solution steps through structured program logic.
+          </p>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="bubble-box">
-      <h2>Contact</h2>
+    <section id="skills" class="section-panel reveal">
+      <p class="section-kicker">Skills</p>
+      <h2>Tools I can work with right away</h2>
+      <div class="skills-grid">
+        <article class="skill-group">
+          <h3>Languages</h3>
+          <p>Java, Python, JavaScript, C/C++, F#, SQL, HTML/CSS</p>
+        </article>
+        <article class="skill-group">
+          <h3>Frameworks</h3>
+          <p>React, SpringBoot, Node.js, JavaFX, SceneBuilder</p>
+        </article>
+        <article class="skill-group">
+          <h3>Databases</h3>
+          <p>SQL Server, MongoDB</p>
+        </article>
+        <article class="skill-group">
+          <h3>Tools</h3>
+          <p>Git, GitHub, Docker, VS Code, IntelliJ, Figma, AWS, Google Cloud</p>
+        </article>
+      </div>
+    </section>
 
-      <div class="experience-card">
-        <h3 class="job-title">Let&rsquo;s Connect</h3>
-        <p>
-          Whether you're reaching out about an opportunity, feedback on my portfolio, or just want to chat about tech &mdash; I'd love to hear from you!
-          I'm always open to collaboration and learning from others in the community.
+    <section id="education" class="section-panel reveal">
+      <p class="section-kicker">Education</p>
+      <h2>Foundation and growth</h2>
+      <div class="content-grid two-column">
+        <article class="info-card">
+          <h3>Farmingdale State College</h3>
+          <p class="card-meta">B.S. in Computer Science | Expected May 2026</p>
+          <p>Dean&rsquo;s List student with coursework in algorithms, OOP, web development, networking, architecture, software engineering, and operating systems.</p>
+        </article>
+        <article class="info-card">
+          <h3>CodePath Web Development</h3>
+          <p class="card-meta">Spring 2025</p>
+          <p>Completed a hands-on program focused on HTML, CSS, JavaScript, responsive layouts, form validation, and project-based web development.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-panel contact-panel reveal">
+      <div>
+        <p class="section-kicker">Contact</p>
+        <h2>Let&rsquo;s make it easy to connect</h2>
+        <p class="contact-copy">
+          If you&rsquo;re hiring for an internship or early-career software role, I&rsquo;d love to connect and share more about my projects and goals.
         </p>
       </div>
 
-      <div class="experience-card">
-        <h3 class="job-title">Contact Info</h3>
-        <ul class="contact-icons">
-          <li>
-            <img src="assets/icons/email.svg" alt="Email Icon" class="contact-icon" />
-            <a href="mailto:mariedgousse@gmail.com">mariedgousse@gmail.com</a>
-          </li>
-          <li>
-            <img src="assets/icons/social-linkedin.svg" alt="LinkedIn Icon" class="contact-icon" />
-            <a href="https://www.linkedin.com/in/dieunie-gousse" target="_blank" rel="noopener noreferrer">linkedin.com/in/dieunie-gousse</a>
-          </li>
-          <li>
-            <img src="assets/icons/github.svg" alt="GitHub Icon" class="contact-icon" />
-            <a href="https://github.com/DieunieG" target="_blank" rel="noopener noreferrer">github.com/DieunieG</a>
-          </li>
-          <li>
-            <img src="assets/icons/icons8-hackerrank-24.png" alt="HackerRank Icon" class="contact-icon" />
-            <a href="https://www.hackerrank.com/dashboard" target="_blank" rel="noopener noreferrer">hackerrank.com/dashboard</a>
-          </li>
-          <li>
-            <img src="assets/icons/icons8-phone-30.png" alt="Phone Icon" class="contact-icon" />
-            <a href="tel:+16316457794">+1 (631) 645-7794</a>
-          </li>
-        </ul>
+      <div class="contact-grid">
+        <a class="contact-link" href="mailto:mariedgousse@gmail.com">
+          <img src="assets/icons/email.svg" alt="Email icon" class="contact-icon" />
+          <span>
+            <strong>Email</strong>
+            <span>mariedgousse@gmail.com</span>
+          </span>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/dieunie-gousse" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/social-linkedin.svg" alt="LinkedIn icon" class="contact-icon" />
+          <span>
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/dieunie-gousse</span>
+          </span>
+        </a>
+        <a class="contact-link" href="https://github.com/DieunieG" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/github.svg" alt="GitHub icon" class="contact-icon" />
+          <span>
+            <strong>GitHub</strong>
+            <span>github.com/DieunieG</span>
+          </span>
+        </a>
+        <a class="contact-link" href="tel:+16316457794">
+          <img src="assets/icons/icons8-phone-30.png" alt="Phone icon" class="contact-icon" />
+          <span>
+            <strong>Phone</strong>
+            <span>+1 (631) 645-7794</span>
+          </span>
+        </a>
       </div>
     </section>
-  </div>
+  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
-    const typed = new Typed(".typing", {
-      strings: [
-        "A Fast Learner",
-        "Fullstack Developer",
-        "Creative Thinker",
-        "Team Collaborator",
-        "Software Engineer in Progress"
-      ],
-      typeSpeed: 60,
-      backSpeed: 30,
-      backDelay: 2000,
-      loop: true
+    const menuToggle = document.getElementById("menu-toggle");
+    const siteNav = document.getElementById("site-nav");
+    const navLinks = siteNav.querySelectorAll("a");
+
+    menuToggle.addEventListener("click", () => {
+      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!expanded));
+      siteNav.classList.toggle("is-open");
     });
-  </script>
-  <script>
-    let lastStarTime = 0;
 
-    if (window.matchMedia("(pointer: fine)").matches) {
-      document.addEventListener("mousemove", function (e) {
-        const now = Date.now();
-        if (now - lastStarTime < 60) return;
-        lastStarTime = now;
-
-        const star = document.createElement("div");
-        star.className = "star";
-        star.innerHTML = `
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="#f48fb1" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L14.7 8.7L22 9.3L16.5 14L18.1 21.2L12 17.5L5.9 21.2L7.5 14L2 9.3L9.3 8.7L12 2Z"/>
-          </svg>
-        `;
-        star.style.left = e.pageX + "px";
-        star.style.top = e.pageY + "px";
-        document.body.appendChild(star);
-
-        setTimeout(() => {
-          star.remove();
-        }, 1000);
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        siteNav.classList.remove("is-open");
       });
-    }
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
   </script>
 </body>
 </html>
