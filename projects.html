@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Dieunie Gousse</title>
+  <meta name="description" content="Selected software projects by Dieunie Gousse." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+</head>
+<body data-page="projects">
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="sidebar__brand" href="index.html">
+        <span class="sidebar__monogram">DG</span>
+        <span>
+          <strong>Dieunie Gousse</strong>
+          <small>Software Engineer</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="experience.html" data-nav="experience">Experience</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="skills.html" data-nav="skills">Skills</a>
+        <a href="education.html" data-nav="education">Education</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+        <a href="assets/resume/Dieunie_Gousse_Resume.pdf" data-nav="resume" data-resume-link>Resume</a>
+      </nav>
+      <div class="sidebar__footer">
+        <a href="mailto:mariedgousse@gmail.com">mariedgousse@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dieunie-gousse" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/DieunieG" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </aside>
+
+    <main class="page">
+      <section class="page-hero reveal">
+        <p class="section-label">Projects</p>
+        <h1>Work that highlights interface quality, problem solving, and system thinking.</h1>
+      </section>
+
+      <section class="panel reveal">
+        <div class="projects-list">
+          <article class="project-detail project-detail--featured">
+            <div class="project-detail__top">
+              <div>
+                <p class="project-tag">Most Recent</p>
+                <h2>StockVision</h2>
+                <p>AI-driven stock forecasting tool built for beginner investors during the AI4ALL Ignite Program.</p>
+              </div>
+              <span>Jun 2025 - Aug 2025</span>
+            </div>
+            <ul class="pill-list">
+              <li>React</li>
+              <li>Forecasting Models</li>
+              <li>Charts</li>
+              <li>API Integration</li>
+              <li>Kaggle Data</li>
+            </ul>
+            <ul class="project-bullets">
+              <li>Designed the frontend in React with dynamic search, prediction charts, and confidence bands to make model outputs easier to understand.</li>
+              <li>Implemented ARIMA and Prophet forecasting models on Kaggle stock price data to improve short-term prediction accuracy.</li>
+              <li>Shaped the product with a 5-person team and presented the final system at the AI4ALL showcase.</li>
+              <li>Improved accessibility and usability by keeping the interface readable for beginner investors rather than technical users only.</li>
+            </ul>
+          </article>
+
+          <article class="project-detail">
+            <div class="project-detail__top">
+              <div>
+                <p class="project-tag">Collaborative Product</p>
+                <h2>FinTrack</h2>
+                <p>Personal finance dashboard built in a team environment with responsive UI and API-connected flows.</p>
+              </div>
+              <span>Jan 2025 - Mar 2025</span>
+            </div>
+            <ul class="pill-list">
+              <li>React</li>
+              <li>Figma</li>
+              <li>GitHub</li>
+              <li>Responsive Design</li>
+            </ul>
+            <ul class="project-bullets">
+              <li>Built 6+ responsive UI screens including sidebar navigation, dashboard cards, and transaction history with mobile-first layout decisions.</li>
+              <li>Implemented a light and dark mode toggle to improve usability across different viewing contexts.</li>
+              <li>Coordinated frontend work through feature branches and consistent GitHub commits to keep team development organized.</li>
+              <li>Connected UI flows to backend APIs so the interface reflected real application data instead of static mock content.</li>
+            </ul>
+          </article>
+
+          <article class="project-detail">
+            <div class="project-detail__top">
+              <div>
+                <p class="project-tag">JavaFX</p>
+                <h2>Card Game 24</h2>
+                <p>Interactive desktop application that challenges users to build mathematical expressions that equal 24.</p>
+              </div>
+              <span>Mar 2025</span>
+            </div>
+            <ul class="pill-list">
+              <li>Java</li>
+              <li>JavaFX</li>
+              <li>UI Design</li>
+              <li>Recursion</li>
+            </ul>
+            <ul class="project-bullets">
+              <li>Built a full JavaFX interface for a game flow that remains readable and structured throughout repeated play.</li>
+              <li>Implemented recursive hint logic to evaluate possible expressions and guide users toward valid solutions.</li>
+              <li>Added input validation to handle incorrect entries and keep gameplay stable under unexpected input.</li>
+              <li>Used layout management and object modeling to keep the project maintainable as rules and interactions expanded.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://youtu.be/OZOZoZWQ_jc?si=kun0qF7CVW6CjNbr" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

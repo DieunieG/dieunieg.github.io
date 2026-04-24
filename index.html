@@ -4,341 +4,210 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dieunie Gousse | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Dieunie Gousse, an early-career software engineer focused on frontend and full-stack development."
+  />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="assets/img/favicon-16x16.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#home">
-      <span class="brand-mark">DG</span>
-      <span class="brand-text">
-        <strong>Dieunie Gousse</strong>
-        <span>Portfolio</span>
-      </span>
-    </a>
+<body data-page="home">
+  <div class="intro-overlay" id="intro-overlay" aria-hidden="true">
+    <div class="intro-overlay__card">
+      <p class="intro-overlay__eyebrow">Dieunie Gousse</p>
+      <h1>Software engineer in progress.</h1>
+      <p>Frontend clarity. Full-stack range. Thoughtful execution from idea to delivery.</p>
+    </div>
+  </div>
 
-    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="sidebar__brand" href="index.html">
+        <span class="sidebar__monogram">DG</span>
+        <span>
+          <strong>Dieunie Gousse</strong>
+          <small>Software Engineer</small>
+        </span>
+      </a>
 
-    <nav class="site-nav" id="site-nav">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-resume" href="assets/resume/Dieunie_Gousse_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-    </nav>
-  </header>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <main class="page-shell">
-    <section id="home" class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Software engineer in progress with a focus on frontend and full-stack development</p>
-        <h1>
-          Building thoughtful digital experiences with strong design instincts and real technical range.
-        </h1>
-        <p class="hero-lead">
-          I&rsquo;m Dieunie Gousse, a Computer Science student who enjoys turning ideas into responsive, polished products across web, Java, and database-driven projects.
-        </p>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="experience.html" data-nav="experience">Experience</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="skills.html" data-nav="skills">Skills</a>
+        <a href="education.html" data-nav="education">Education</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+        <a href="assets/resume/Dieunie_Gousse_Resume.pdf" data-nav="resume" data-resume-link>Resume</a>
+      </nav>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Featured Work</a>
-          <a class="btn btn-secondary" href="assets/resume/Dieunie_Gousse_Resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume</a>
-        </div>
-
-        <div class="quick-facts">
-          <article class="fact-card reveal">
-            <span class="fact-number">6+</span>
-            <span class="fact-label">responsive UI screens shipped in a team product build</span>
-          </article>
-          <article class="fact-card reveal">
-            <span class="fact-number">100+</span>
-            <span class="fact-label">client profiles managed with reliability and attention to detail</span>
-          </article>
-          <article class="fact-card reveal">
-            <span class="fact-number">3</span>
-            <span class="fact-label">core strengths: frontend polish, teamwork, fast learning</span>
-          </article>
-        </div>
+      <div class="sidebar__footer">
+        <a href="mailto:mariedgousse@gmail.com">mariedgousse@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dieunie-gousse" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/DieunieG" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
+    </aside>
 
-      <aside class="hero-panel reveal">
-        <div class="portrait-wrap">
-          <img src="assets/img/IMG_1524.jpg" alt="Portrait of Dieunie Gousse" class="hero-portrait" />
-        </div>
-
-        <div class="spotlight-card">
-          <p class="spotlight-label">Quick Snapshot</p>
-          <ul>
-            <li>Computer Science student at Farmingdale State College</li>
-            <li>Dean&rsquo;s List scholar graduating in May 2026</li>
-            <li>Hands-on with React, Java, SQL, Git, and responsive UI work</li>
-            <li>Focused on internships and early-career software engineering roles</li>
-          </ul>
-        </div>
-      </aside>
-    </section>
-
-    <section class="section-panel highlight-strip reveal">
-      <div>
-        <p class="section-kicker">40-second overview</p>
-        <h2>What stands out at first glance</h2>
-      </div>
-      <div class="highlight-grid">
-        <article class="mini-panel">
-          <h3>What I bring</h3>
-          <p>Clean frontend execution, strong follow-through, and the ability to learn new tools quickly.</p>
-        </article>
-        <article class="mini-panel">
-          <h3>How I work</h3>
-          <p>I care about user experience, collaboration, and making code readable and maintainable.</p>
-        </article>
-        <article class="mini-panel">
-          <h3>What to explore</h3>
-          <p>Start with FinTrack and my JavaFX projects to see both collaborative product work and hands-on technical problem solving.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section-panel reveal">
-      <p class="section-kicker">About</p>
-      <h2>Technical curiosity with a strong eye for people-focused design</h2>
-      <div class="content-grid two-column">
-        <div class="info-card">
-          <h3>Who I am</h3>
-          <p>
-            I&rsquo;m a Computer Science student who enjoys building digital experiences that feel thoughtful, clear, and useful.
-            I like projects where design and logic meet, especially when I can improve how people interact with software.
+    <main class="page">
+      <section class="hero">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Early-career software engineer focused on frontend and full-stack development</p>
+          <p class="hero__intro">Hi, I&apos;m</p>
+          <h1><span id="typed-name">Dieunie Gousse</span></h1>
+          <h2>Building clean, reliable products that are easy to use and easy to trust.</h2>
+          <p class="hero__summary">
+            I design and build responsive interfaces, debug problems methodically, and ship projects that balance user experience with clear engineering decisions.
           </p>
-        </div>
-        <div class="info-card">
-          <h3>What makes me stand out</h3>
-          <p>
-            I bring a mix of technical range and people skills: frontend development, Java-based problem solving, database work,
-            collaboration, and a service mindset sharpened through real client-facing experience.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <section id="experience" class="section-panel reveal">
-      <p class="section-kicker">Experience</p>
-      <h2>Evidence that I can contribute in real environments</h2>
-      <div class="timeline">
-        <article class="timeline-card">
-          <div class="timeline-top">
-            <div>
-              <h3>Frontend Developer</h3>
-              <p class="timeline-company">FinTrack</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="projects.html">View Projects</a>
+            <a class="btn btn--secondary" href="assets/resume/Dieunie_Gousse_Resume.pdf" data-resume-link>Open Resume</a>
+            <a class="btn btn--ghost" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__aside reveal">
+          <div class="portrait-card">
+            <img src="assets/img/IMG_1524.jpg" alt="Portrait of Dieunie Gousse" class="portrait-card__image" />
+            <div class="portrait-card__details">
+              <p>Long Island, NY</p>
+              <p>B.S. Computer Science, May 2026</p>
+              <p>Dean&rsquo;s List</p>
             </div>
-            <p class="timeline-date">Jan 2025 - Mar 2025</p>
           </div>
-          <ul>
-            <li>Built 6+ responsive product screens using React, Figma, and Flexbox in a collaborative environment.</li>
-            <li>Worked through feature branching and shared UI decisions with teammates using GitHub.</li>
-            <li>Improved clarity and usability by styling complex components with a clean, modern user experience in mind.</li>
-          </ul>
-        </article>
 
-        <article class="timeline-card">
-          <div class="timeline-top">
-            <div>
-              <h3>Beautician</h3>
-              <p class="timeline-company">Deja Vu Salon</p>
-            </div>
-            <p class="timeline-date">Mar 2020 - Present</p>
+          <div class="summary-card">
+            <p class="section-label">At a glance</p>
+            <ul class="summary-card__list">
+              <li>Built 6+ responsive product screens in a team React project</li>
+              <li>Improved permit retrieval speed by 30% during a municipal IT internship</li>
+              <li>Mentored 20+ students through coding blockers as a CodePath Tech Fellow</li>
+            </ul>
           </div>
-          <ul>
-            <li>Managed 100+ client profiles and appointments with consistency, care, and attention to detail.</li>
-            <li>Improved repeat business by tailoring services based on patterns, preferences, and customer feedback.</li>
-            <li>Brought organization, communication, and trust-building skills that translate directly into team and user-facing roles.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section-panel reveal">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Projects</p>
-          <h2>Featured work worth a closer look</h2>
         </div>
-        <p class="section-note">Chosen to show problem solving, code structure, and UI thinking.</p>
-      </div>
+      </section>
 
-      <div class="project-grid">
-        <article class="project-card project-card-featured reveal">
-          <p class="project-tag">Featured Team Project</p>
-          <h3>FinTrack Dashboard</h3>
-          <p>
-            Built responsive UI screens in a team setting, contributed to shared design decisions, and helped shape a cleaner user experience for a finance product.
-          </p>
-          <ul class="project-meta">
-            <li>React</li>
-            <li>Figma</li>
-            <li>Responsive UI</li>
-            <li>Team Collaboration</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal">
-          <p class="project-tag">Java + JavaFX</p>
-          <h3>Card Game 24</h3>
-          <p>
-            Created an interactive JavaFX app that challenges users to form equations totaling 24 with randomly drawn cards, including hints and validation logic.
-          </p>
-          <div class="project-links">
-            <a href="https://youtu.be/OZOZoZWQ_jc?si=kun0qF7CVW6CjNbr" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+      <section class="panel reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">How I work</p>
+            <h2>Clear thinking, reliable execution, and sharp product judgment.</h2>
           </div>
-        </article>
+        </div>
+        <div class="grid grid--three">
+          <article class="info-card">
+            <h3>Engineer with ownership</h3>
+            <p>I take work from rough ideas to polished results, with attention to detail in both code and interface decisions.</p>
+          </article>
+          <article class="info-card">
+            <h3>Debugging mindset</h3>
+            <p>I break problems down, test assumptions, and work toward fixes that improve reliability instead of masking symptoms.</p>
+          </article>
+          <article class="info-card">
+            <h3>Built for real users</h3>
+            <p>I care about readable layouts, mobile responsiveness, and interactions that feel calm, intentional, and easy to navigate.</p>
+          </article>
+        </div>
+      </section>
 
-        <article class="project-card reveal">
-          <p class="project-tag">Web Development</p>
-          <h3>Event Website</h3>
-          <p>
-            Designed and deployed a responsive event site with strong layout structure, polished styling, and hands-on GitHub Pages deployment experience.
-          </p>
-          <div class="project-links">
-            <a href="https://drawing-flexible-stream-277.vscodeedu.app/" target="_blank" rel="noopener noreferrer">View Live Site</a>
+      <section class="panel reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Current fit</p>
+            <h2>Where I bring the most value right now.</h2>
           </div>
-        </article>
+        </div>
+        <div class="grid grid--three">
+          <article class="fit-card">
+            <h3>Frontend engineering</h3>
+            <p>Responsive React interfaces, clean component structure, and product-focused visual polish.</p>
+          </article>
+          <article class="fit-card">
+            <h3>Full-stack growth roles</h3>
+            <p>Comfortable moving between UI, APIs, and data-backed workflows while continuing to deepen backend skills.</p>
+          </article>
+          <article class="fit-card">
+            <h3>Collaborative teams</h3>
+            <p>Strong fit for teams that value ownership, communication, and engineers who can ramp quickly.</p>
+          </article>
+        </div>
+      </section>
 
-        <article class="project-card reveal">
-          <p class="project-tag">Java + SQL</p>
-          <h3>McDonald&rsquo;s Franchise System</h3>
-          <p>
-            Simulated restaurant operations with modular Java classes, database connectivity, and persistent data handling for orders, billing, and menu logic.
-          </p>
-        </article>
+      <section class="panel reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Selected work</p>
+            <h2>Projects that show product thinking and technical range.</h2>
+          </div>
+          <a class="text-link" href="projects.html">See all projects</a>
+        </div>
+        <div class="project-preview">
+          <article class="project-preview__featured">
+            <p class="project-tag">Featured</p>
+            <h3>StockVision</h3>
+            <p>A web-based forecasting tool built in a 5-person team for beginner investors, combining React UI, predictive models, and accessible data visuals.</p>
+            <ul class="pill-list">
+              <li>React</li>
+              <li>ARIMA</li>
+              <li>Prophet</li>
+              <li>API Integration</li>
+            </ul>
+          </article>
+          <article class="project-preview__card">
+            <p class="project-tag">Team Product</p>
+            <h3>FinTrack</h3>
+            <p>Responsive dashboard screens, mobile-first layouts, dark mode support, and API-connected UI flows.</p>
+          </article>
+          <article class="project-preview__card">
+            <p class="project-tag">JavaFX</p>
+            <h3>Card Game 24</h3>
+            <p>Desktop app with recursive hint logic, validation, and a structured interface for guided gameplay.</p>
+          </article>
+        </div>
+      </section>
 
-        <article class="project-card reveal">
-          <p class="project-tag">Algorithms</p>
-          <h3>Maze Solver App</h3>
-          <p>
-            Engineered a recursive backtracking solution for 2D mazes and visualized valid paths, dead ends, and solution steps through structured program logic.
-          </p>
-        </article>
-      </div>
-    </section>
+      <section class="panel reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Experience preview</p>
+            <h2>Recent roles with real responsibility.</h2>
+          </div>
+          <a class="text-link" href="experience.html">View experience</a>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__top">
+              <div>
+                <h3>IT Intern</h3>
+                <p>Town of Huntington, Housing &amp; Building Division</p>
+              </div>
+              <span>Jun 2025 - Aug 2025</span>
+            </div>
+            <p>Digitized municipal records, improved permit retrieval speed by 30%, and reduced staff search time through better metadata and archive organization.</p>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__top">
+              <div>
+                <h3>Tech Fellow</h3>
+                <p>CodePath</p>
+              </div>
+              <span>Jun 2025 - Present</span>
+            </div>
+            <p>Led interactive coding demos, unblocked 20+ students, and improved engagement by 40% through structured teaching and debugging support.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
 
-    <section id="skills" class="section-panel reveal">
-      <p class="section-kicker">Skills</p>
-      <h2>Tools I can work with right away</h2>
-      <div class="skills-grid">
-        <article class="skill-group">
-          <h3>Languages</h3>
-          <p>Java, Python, JavaScript, C/C++, F#, SQL, HTML/CSS</p>
-        </article>
-        <article class="skill-group">
-          <h3>Frameworks</h3>
-          <p>React, SpringBoot, Node.js, JavaFX, SceneBuilder</p>
-        </article>
-        <article class="skill-group">
-          <h3>Databases</h3>
-          <p>SQL Server, MongoDB</p>
-        </article>
-        <article class="skill-group">
-          <h3>Tools</h3>
-          <p>Git, GitHub, Docker, VS Code, IntelliJ, Figma, AWS, Google Cloud</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="education" class="section-panel reveal">
-      <p class="section-kicker">Education</p>
-      <h2>Foundation and growth</h2>
-      <div class="content-grid two-column">
-        <article class="info-card">
-          <h3>Farmingdale State College</h3>
-          <p class="card-meta">B.S. in Computer Science | Expected May 2026</p>
-          <p>Dean&rsquo;s List student with coursework in algorithms, OOP, web development, networking, architecture, software engineering, and operating systems.</p>
-        </article>
-        <article class="info-card">
-          <h3>CodePath Web Development</h3>
-          <p class="card-meta">Spring 2025</p>
-          <p>Completed a hands-on program focused on HTML, CSS, JavaScript, responsive layouts, form validation, and project-based web development.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section-panel contact-panel reveal">
-      <div>
-        <p class="section-kicker">Contact</p>
-        <h2>Let&rsquo;s make it easy to connect</h2>
-        <p class="contact-copy">
-          If you&rsquo;re hiring for an internship or early-career software role, I&rsquo;d love to connect and share more about my projects and goals.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <a class="contact-link" href="mailto:mariedgousse@gmail.com">
-          <img src="assets/icons/email.svg" alt="Email icon" class="contact-icon" />
-          <span>
-            <strong>Email</strong>
-            <span>mariedgousse@gmail.com</span>
-          </span>
-        </a>
-        <a class="contact-link" href="https://www.linkedin.com/in/dieunie-gousse" target="_blank" rel="noopener noreferrer">
-          <img src="assets/icons/social-linkedin.svg" alt="LinkedIn icon" class="contact-icon" />
-          <span>
-            <strong>LinkedIn</strong>
-            <span>linkedin.com/in/dieunie-gousse</span>
-          </span>
-        </a>
-        <a class="contact-link" href="https://github.com/DieunieG" target="_blank" rel="noopener noreferrer">
-          <img src="assets/icons/github.svg" alt="GitHub icon" class="contact-icon" />
-          <span>
-            <strong>GitHub</strong>
-            <span>github.com/DieunieG</span>
-          </span>
-        </a>
-        <a class="contact-link" href="tel:+16316457794">
-          <img src="assets/icons/icons8-phone-30.png" alt="Phone icon" class="contact-icon" />
-          <span>
-            <strong>Phone</strong>
-            <span>+1 (631) 645-7794</span>
-          </span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const siteNav = document.getElementById("site-nav");
-    const navLinks = siteNav.querySelectorAll("a");
-
-    menuToggle.addEventListener("click", () => {
-      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
-      menuToggle.setAttribute("aria-expanded", String(!expanded));
-      siteNav.classList.toggle("is-open");
-    });
-
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        menuToggle.setAttribute("aria-expanded", "false");
-        siteNav.classList.remove("is-open");
-      });
-    });
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-
-    document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
