@@ -626,113 +626,17 @@ select {
   font-size: 0.97rem;
 }
 
-.resume-frame {
-  min-height: 76vh;
+.resume-embed {
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--surface-strong);
-  display: grid;
-  place-items: center;
-  padding: 1.5rem;
 }
 
-.resume-frame__content {
-  max-width: 520px;
-  text-align: center;
-}
-
-.resume-frame__content p {
-  margin-bottom: 1rem;
-}
-
-.resume-modal {
-  width: min(1120px, calc(100vw - 2rem));
-  height: min(90vh, 900px);
-  padding: 0;
-  border: 0;
-  border-radius: 24px;
-  background: transparent;
-}
-
-.resume-modal::backdrop {
-  background: rgba(20, 28, 40, 0.58);
-  backdrop-filter: blur(6px);
-}
-
-.resume-modal__shell {
-  height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  background: #f8fafc;
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.24);
-}
-
-.resume-modal__header,
-.resume-modal__footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 1.2rem;
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid var(--line);
-}
-
-.resume-modal__footer {
-  border-bottom: 0;
-  border-top: 1px solid var(--line);
-}
-
-.resume-modal__header h2 {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.resume-modal__close {
-  border: 1px solid var(--line);
-  background: #fff;
-  color: var(--text);
-  border-radius: 999px;
-  padding: 0.7rem 1rem;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-.resume-modal__body {
-  background: #eef3f8;
-  min-height: 0;
-  display: grid;
-  place-items: center;
-  padding: 1.5rem;
-}
-
-.resume-modal__message {
+.resume-embed__image {
+  display: block;
   width: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.resume-modal__preview-card {
-  max-width: 520px;
-  text-align: center;
-  padding: 1.5rem;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--line);
-  box-shadow: 0 12px 28px rgba(24, 39, 75, 0.08);
-}
-
-.resume-modal__preview-card h3 {
-  margin-top: 0.8rem;
-  font-size: 1.4rem;
-}
-
-.resume-modal__preview-card p:last-child {
-  margin-top: 0.8rem;
+  height: auto;
 }
 
 .reveal {
@@ -864,21 +768,6 @@ select {
 
   .intro-overlay__card {
     max-width: 100%;
-  }
-
-  .resume-modal {
-    width: calc(100vw - 1rem);
-    height: calc(100vh - 1rem);
-  }
-
-  .resume-modal__header,
-  .resume-modal__footer {
-    padding: 0.9rem;
-  }
-
-  .resume-modal__footer {
-    flex-direction: column;
-    align-items: stretch;
   }
 }
 

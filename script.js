@@ -4,7 +4,7 @@ const navToggle = document.getElementById("nav-toggle");
 const siteNav = document.getElementById("site-nav");
 const introOverlay = document.getElementById("intro-overlay");
 const typedName = document.getElementById("typed-name");
-const resumeHref = "assets/resume/Dieunie_Gousse_Resume.pdf";
+const resumePdfPath = "assets/resume/Dieunie_Gousse_Resume.pdf";
 
 if (siteNav && currentPage) {
   const activeLink = siteNav.querySelector(`[data-nav="${currentPage}"]`);
@@ -62,69 +62,25 @@ if (typedName) {
   }
 }
 
-function buildResumeModal() {
-  const modal = document.createElement("dialog");
-  modal.className = "resume-modal";
-  modal.innerHTML = `
-    <div class="resume-modal__shell">
-      <div class="resume-modal__header">
-        <div>
-          <p class="section-label">Resume</p>
-          <h2>Dieunie Gousse</h2>
-        </div>
-        <button class="resume-modal__close" type="button" aria-label="Close resume viewer">Close</button>
-      </div>
-      <div class="resume-modal__body">
-        <div class="resume-modal__message">
-          <div class="resume-modal__preview-card">
-            <p class="section-label">Resume Ready</p>
-            <h3>Dieunie Gousse Resume</h3>
-            <p>
-              This browser is not rendering the PDF preview correctly here, so use one of the working options below to open or download it cleanly.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="resume-modal__footer">
-        <a class="btn btn--secondary" href="${resumeHref}" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
-        <a class="btn btn--primary" href="${resumeHref}" download>Download Resume</a>
-      </div>
-    </div>
-  `;
-  document.body.appendChild(modal);
-
-  const closeButton = modal.querySelector(".resume-modal__close");
-  closeButton.addEventListener("click", () => modal.close());
-  modal.addEventListener("click", (event) => {
-    const rect = modal.querySelector(".resume-modal__shell").getBoundingClientRect();
-    const isInside =
-      event.clientX >= rect.left &&
-      event.clientX <= rect.right &&
-      event.clientY >= rect.top &&
-      event.clientY <= rect.bottom;
-    if (!isInside) modal.close();
-  });
-
-  return modal;
-}
-
-const resumeLinks = document.querySelectorAll("[data-resume-link]");
-let resumeModal = null;
-
-resumeLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
+document.querySelectorAll("[data-download-resume]").forEach((link) => {
+  link.addEventListener("click", async (event) => {
     event.preventDefault();
-    if (!resumeModal) resumeModal = buildResumeModal();
-    resumeModal.showModal();
+    try {
+      const response = await fetch(resumePdfPath);
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "Dieunie_Gousse_Resume.pdf";
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      window.open(resumePdfPath, "_blank", "noopener");
+    }
   });
 });
-
-if (currentPage === "resume") {
-  window.setTimeout(() => {
-    if (!resumeModal) resumeModal = buildResumeModal();
-    if (!resumeModal.open) resumeModal.showModal();
-  }, 250);
-}
 
 const observer = new IntersectionObserver(
   (entries) => {
